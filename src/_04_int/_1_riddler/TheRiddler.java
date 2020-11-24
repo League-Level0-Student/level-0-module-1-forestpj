@@ -30,14 +30,30 @@ public class TheRiddler {
 
 		// 6. Add some more riddles
 		String inputt = JOptionPane.showInputDialog(null,
-				"I am something people love or hate. I change peoples appearances and thoughts. If a person takes care of themselves I will go up even higher. To some people I will fool htem. To others I am a mystery. Some people might want to try and hide me but I will show. No matter how hard people try I will never go down. What am I?");
+				" I am something people love or hate.\n I change peoples appearances and thoughts.\n If a person takes care of themselves I will go up even higher.\n To some people I will fool them.\n To others I am a mystery.\n Some people might want to try and hide me but I will show.\n No matter how hard people try I will never go down.\n What am I?");
 		// 2. Make a pop up to show the score.
 		if (inputt.equals("age")) {
 			JOptionPane.showMessageDialog(null, "correct!");
+			
+			score++;
+			
 		} else {
 			JOptionPane.showMessageDialog(null, "wrong.");
 		}
 
+		JOptionPane.showMessageDialog(null, "you have a score of " + score + ".");
+		
+		String inputtt = JOptionPane.showInputDialog(null,
+				"The more of this there is, The less you see. What is it?");
+		if (inputtt.equals("darkness")) {
+			JOptionPane.showMessageDialog(null, "correct!");
+			
+			score++;
+			
+		} else {
+			JOptionPane.showMessageDialog(null, "wrong.");
+		}
+		
 		JOptionPane.showMessageDialog(null, "you have a score of " + score + ".");
 	}
 }
