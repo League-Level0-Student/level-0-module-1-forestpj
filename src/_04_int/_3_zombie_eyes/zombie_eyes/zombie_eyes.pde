@@ -8,12 +8,15 @@ PImage face = loadImage("zombie.jpeg");
  image(face,0,0);
 }
 void draw() {
-  fill(50,150,50);
+  fill(mouseX,mouseX,mouseX);
   ellipse(546,300,99,99);
-  fill(50,150,50);
+  fill(mouseY,mouseY,mouseY);
   ellipse(299,354,99,99);
-  fill(1,1,1);
-  ellipse(570,300,50,50);
-  fill(1,1,1);
+  
+  
+  
+  fill(255,1,1);
+  ellipse(280,340,50,50);
+  fill(255,1,1);
   ellipse(570,300,50,50);
 }
